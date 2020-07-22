@@ -1,0 +1,13 @@
+<!-- Interpolation -->
+<h1>{{ title }}</h1>
+
+<!-- Binding -->
+<button [disabled]="clicked" (click)="handleClick()">
+    Klick mich
+</button>
+
+<div *ngIf="clicked">
+    <div *ngFor="let company of companies">
+        <app-company [company]="company"></app-company>
+    </div>
+</div>
