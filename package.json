@@ -1,5 +1,5 @@
 {
-  "name": "angular-example-component",
+  "name": "workshop-angular-router",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
