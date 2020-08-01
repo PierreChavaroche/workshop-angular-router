@@ -1,0 +1,23 @@
+<p>companies works!</p>
+<!-- Interpolation -->
+<h1>{{ title }}</h1>
+
+<!-- Binding -->
+<button [disabled]="clicked" (click)="handleClick()">
+    Klick mich
+</button>
+
+<div *ngIf="clicked">
+    <!-- <div *ngFor="let company of companies">
+        <app-company [company]="company"></app-company>
+    </div> -->
+    <ul>
+        <li *ngFor="let company of companies">
+            <a [routerLink]="['/companies', company.name]" routerLinkActive="active">
+                {{ company.name }}
+            </a>
+        </li>
+    </ul>
+</div>
+
+<router-outlet></router-outlet>

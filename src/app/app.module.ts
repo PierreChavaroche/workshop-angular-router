@@ -8,6 +8,8 @@ import { MagnifierDirective } from './magnifier.directive';
 import { YearPipe } from './year.pipe';
 import { CompanyComponent } from './company/company.component';
 import { CompaniesComponent } from './companies/companies.component';
+import { CompanyDetailComponent } from './company-detail/company-detail.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CompaniesComponent } from './companies/companies.component';
     MagnifierDirective,
     YearPipe,
     CompanyComponent,
-    CompaniesComponent
+    CompaniesComponent,
+    CompanyDetailComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
