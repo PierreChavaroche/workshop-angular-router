@@ -1,6 +1,13 @@
-# AngularExampleComponent
+# Workshop: Angular Router
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.5.
+Veranschaulichung der Funktionsweise von Angular Router:
+
+- Angular Router
+- Child-Routes
+- Guards
+- Resolver
+- Modules
+- Lazy-Loading
 
 ## Development server
 
