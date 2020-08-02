@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { MagnifierDirective } from './magnifier.directive';
 import { YearPipe } from './year.pipe';
-import { CompanyComponent } from './company/company.component';
+import { CompanyComponent } from './shared/company/company.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { CompanyDetailComponent } from './company-detail/company-detail.component';
 import { ErrorComponent } from './error/error.component';
