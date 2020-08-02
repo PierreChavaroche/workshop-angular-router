@@ -13,12 +13,12 @@ export class CompaniesComponent implements OnInit, AfterViewInit, DoCheck, OnDes
   companies = [
     {
       name: 'Google',
-      logoSrc: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg',
+      logoSrc: 'assets/logos/Logo-Google.svg',
       foundingYear: 1998
     },
     {
       name: 'sixData',
-      logoSrc: 'https://www.sixdata.de/wp-content/themes/sixdata/img/sixData.png',
+      logoSrc: 'assets/logos/Logo-Google.svg',
       foundingYear: 2002
     }
   ]
