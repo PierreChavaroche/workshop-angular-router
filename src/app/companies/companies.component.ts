@@ -1,4 +1,5 @@
 import { Component, OnInit, VERSION, AfterViewInit, DoCheck, OnDestroy } from '@angular/core';
+import { CompanyService } from '../company.service';
 
 @Component({
   selector: 'app-companies',
@@ -6,27 +7,14 @@ import { Component, OnInit, VERSION, AfterViewInit, DoCheck, OnDestroy } from '@
   styleUrls: ['./companies.component.scss']
 })
 export class CompaniesComponent implements OnInit, AfterViewInit, DoCheck, OnDestroy {
-
   clicked: boolean = false;
   title: string = `Angular ${VERSION.full} ist cool!`;
+  companies;
 
-  companies = [
-    {
-      name: 'Google',
-      logoSrc: 'assets/logos/Logo-Google.svg',
-      foundingYear: 1998
-    },
-    {
-      name: 'sixData',
-      logoSrc: 'assets/logos/Logo-sixData.png',
-      foundingYear: 2002
-    }
-  ];
-
-  constructor() { }
+  constructor(private companyService: CompanyService) { }
 
   ngOnInit(): void {
-
+    this.companies = this.companyService.getList();
   }
 
   ngDoCheck() {
