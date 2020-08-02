@@ -18,10 +18,10 @@ export class CompaniesComponent implements OnInit, AfterViewInit, DoCheck, OnDes
     },
     {
       name: 'sixData',
-      logoSrc: 'assets/logos/Logo-Google.svg',
+      logoSrc: 'assets/logos/Logo-sixData.png',
       foundingYear: 2002
     }
-  ]
+  ];
 
   constructor() { }
 
