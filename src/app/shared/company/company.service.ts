@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
+import { ICompany } from './company.interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CompanyService {
-  private companies = [
+  private companies: ICompany[] = [
     {
       name: 'Google',
       logoSrc: 'assets/logos/Logo-Google.svg',
