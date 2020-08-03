@@ -7,12 +7,9 @@
 </button> -->
 
 <!-- <div *ngIf="clicked"> -->
-    <!-- <div *ngFor="let company of companies">
-        <app-company [company]="company"></app-company>
-    </div> -->
     <ul>
         <li *ngFor="let company of companies">
-            <a [routerLink]="['/companies', company.name]" routerLinkActive="active">
+            <a [routerLink]="['/companies', company.id]" routerLinkActive="active">
                 {{ company.name }}
             </a>
         </li>

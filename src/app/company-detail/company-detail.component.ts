@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { ICompany } from '../shared/company/company.interface';
+import { CompanyService } from '../shared/company/company.service';
 
 @Component({
   selector: 'app-company-detail',
@@ -10,15 +12,16 @@ import { Observable } from 'rxjs';
 })
 export class CompanyDetailComponent implements OnInit {
   id: string;
-  id$: Observable<string>;
+  company$: Observable<ICompany>;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private companyService: CompanyService) { }
 
   ngOnInit(): void {
-    this.id = this.route.snapshot.params['id'];
+    this.id = this.route.snapshot.params['id']; // just working once
 
-    this.id$ = this.route.params.pipe(
-      map(params => params['id'] as string)
+    this.company$ = this.route.params.pipe(
+      map(params => params['id'] as string),
+      map(id => this.companyService.get(id))
     );
   }
 
