@@ -1,5 +1,5 @@
 import { Component, OnInit, VERSION, AfterViewInit, DoCheck, OnDestroy } from '@angular/core';
-import { CompanyService } from '../company.service';
+import { CompanyService } from '../shared/company/company.service';
 
 @Component({
   selector: 'app-companies',

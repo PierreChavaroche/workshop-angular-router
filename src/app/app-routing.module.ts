@@ -4,7 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { CompanyDetailComponent } from './company-detail/company-detail.component';
 import { ErrorComponent } from './error/error.component';
-import { AdminGuard } from './admin.guard';
+import { AdminGuard } from './shared/admin.guard';
 
 
 const routes: Routes = [
