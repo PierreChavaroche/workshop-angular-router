@@ -1,13 +1,12 @@
-<p>companies works!</p>
 <!-- Interpolation -->
-<h1>{{ title }}</h1>
+<h2>{{ title }}</h2>
 
 <!-- Binding -->
-<button [disabled]="clicked" (click)="handleClick()">
+<!-- <button [disabled]="clicked" (click)="handleClick()">
     Klick mich
-</button>
+</button> -->
 
-<div *ngIf="clicked">
+<!-- <div *ngIf="clicked"> -->
     <!-- <div *ngFor="let company of companies">
         <app-company [company]="company"></app-company>
     </div> -->
@@ -18,6 +17,6 @@
             </a>
         </li>
     </ul>
-</div>
+<!-- </div> -->
 
 <router-outlet></router-outlet>

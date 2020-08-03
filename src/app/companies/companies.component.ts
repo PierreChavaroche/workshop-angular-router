@@ -1,5 +1,6 @@
 import { Component, OnInit, VERSION, AfterViewInit, DoCheck, OnDestroy } from '@angular/core';
 import { CompanyService } from '../shared/company/company.service';
+import { ICompany } from '../shared/company/company.interface';
 
 @Component({
   selector: 'app-companies',
@@ -8,8 +9,9 @@ import { CompanyService } from '../shared/company/company.service';
 })
 export class CompaniesComponent implements OnInit, AfterViewInit, DoCheck, OnDestroy {
   clicked: boolean = false;
-  title: string = `Angular ${VERSION.full} ist cool!`;
-  companies;
+  // title: string = `Angular ${VERSION.full} ist cool!`;
+  title: string = 'Companies';
+  companies: ICompany[];
 
   constructor(private companyService: CompanyService) { }
 
