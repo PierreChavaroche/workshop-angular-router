@@ -4,12 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { MagnifierDirective } from './magnifier.directive';
-import { YearPipe } from './year.pipe';
 import { CompanyComponent } from './shared/company/company.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { CompanyDetailComponent } from './company-detail/company-detail.component';
 import { ErrorComponent } from './error/error.component';
+import { MagnifierDirective } from './shared/magnifier.directive';
+import { YearPipe } from './shared/year.pipe';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ErrorComponent } from './error/error.component';
   ],
   imports: [
     BrowserModule,
+    RouterModule,
     AppRoutingModule
   ],
   providers: [],

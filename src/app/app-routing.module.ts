@@ -15,7 +15,7 @@ const routes: Routes = [
   {
     path: 'companies',
     component: CompaniesComponent,
-    canActivate: [AdminGuard],
+    // canActivate: [AdminGuard],
     children: [
       {
         path: ':id',
