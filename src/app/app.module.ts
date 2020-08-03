@@ -4,21 +4,17 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { CompanyComponent } from './shared/company/company.component';
 import { CompaniesComponent } from './companies/companies.component';
 import { CompanyDetailComponent } from './company-detail/company-detail.component';
 import { ErrorComponent } from './error/error.component';
-import { MagnifierDirective } from './shared/magnifier.directive';
-import { YearPipe } from './shared/year.pipe';
 import { RouterModule } from '@angular/router';
+import { CompanyModule } from './shared/company/company.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    MagnifierDirective,
-    YearPipe,
-    CompanyComponent,
     CompaniesComponent,
     CompanyDetailComponent,
     ErrorComponent
@@ -26,7 +22,9 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CompanyModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
